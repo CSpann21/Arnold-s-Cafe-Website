@@ -328,7 +328,6 @@
       var c = window.SITE_CONFIG;
       var isOpen = c.STATUS === "open";
 
-      document.getElementById("eyebrow").textContent = c.EYEBROW;
       document.getElementById("headline").textContent = isOpen ? c.HEADLINE_OPEN : c.HEADLINE_COMING_SOON;
       document.getElementById("subtext").textContent = isOpen ? c.SUBTEXT_OPEN : c.SUBTEXT_COMING_SOON;
       document.getElementById("opening-pill").textContent = isOpen ? "Open now" : c.OPENING_WINDOW;
