@@ -41,6 +41,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
+  /* Load local uploaded font */
+  @font-face {
+    font-family: 'TAYRoony';
+    src: url('TAYRoony.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   :root {
     --cream: #fdfdc1;
     --cream-soft: #fffef0;
@@ -50,8 +59,9 @@
     --chartreuse: #c1cc26;
     --plum: #411638;
 
-    --font-display: 'Fraunces', Georgia, serif;
-    --font-body: 'Work Sans', -apple-system, sans-serif;
+    /* Use the uploaded TAYRoony font for display and body */
+    --font-display: 'TAYRoony', Georgia, serif;
+    --font-body: 'TAYRoony', -apple-system, sans-serif;
   }
 
   * { box-sizing: border-box; }
