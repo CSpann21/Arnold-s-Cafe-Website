@@ -37,7 +37,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="s[...]
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
   /* Load local uploaded font */
@@ -138,6 +138,20 @@
     height: 200;
     margin: 0 auto 28px;
     display: block;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--rust);
+    background: var(--sky);
+    padding: 7px 16px;
+    border-radius: 100px;
+    margin-bottom: 22px;
   }
 
   h1 {
@@ -274,6 +288,8 @@
   <main class="wrap hero">
     <img src="ArnoldsCafe.png" alt="Arnold's Cafe logo" class="logo">
 
+    <span class="eyebrow" id="eyebrow"></span>
+
     <h1 id="headline"></h1>
 
     <p class="sub" id="subtext"></p>
@@ -313,6 +329,7 @@
       var c = window.SITE_CONFIG;
       var isOpen = c.STATUS === "open";
 
+      document.getElementById("eyebrow").textContent = c.EYEBROW;
       document.getElementById("headline").textContent = isOpen ? c.HEADLINE_OPEN : c.HEADLINE_COMING_SOON;
       document.getElementById("subtext").textContent = isOpen ? c.SUBTEXT_OPEN : c.SUBTEXT_COMING_SOON;
       document.getElementById("opening-pill").textContent = isOpen ? "Open now" : c.OPENING_WINDOW;
