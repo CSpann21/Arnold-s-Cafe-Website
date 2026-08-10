@@ -165,20 +165,21 @@
   #mce-error-response { color: var(--rust); }
   #mce-success-response { color: var(--plum); }
 
-     .mc-badge {
+   .mc-badge {
     display: inline-block;
     margin-top: 16px;
-  }
-
-  .mc-badge img {
-    width: 110px;
-    height: auto;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--plum);
+    text-decoration: none;
     opacity: 0.6;
     transition: opacity 0.15s ease;
   }
 
-  .mc-badge:hover img {
+  .mc-badge:hover {
     opacity: 1;
+    color: var(--cobalt);
   }
      
   /* ---------- Awning stripe signature element ---------- */
@@ -447,7 +448,7 @@
       <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="signup-button">Notify Me</button>
     </form>
      <a href="http://eepurl.com/tKyHTQggAN" title="Mailchimp - email marketing made easy and fun" class="mc-badge">
-      <img src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp">
+      Powered by Mailchimp
     </a>
     <div id="mce-responses">
       <div class="response" id="mce-error-response" style="display:none;"></div>
