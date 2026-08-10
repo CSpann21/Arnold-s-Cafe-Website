@@ -96,6 +96,91 @@
     outline-offset: 3px;
   }
 
+.signup {
+    padding: 44px 0 48px;
+    text-align: center;
+  }
+
+  .signup h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--plum);
+    margin: 0 0 10px;
+  }
+
+  .signup-sub {
+    font-size: 1rem;
+    color: var(--plum);
+    max-width: 420px;
+    margin: 0 auto 24px;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .signup-input {
+    flex: 1 1 220px;
+    padding: 12px 16px;
+    border: 1.5px solid var(--rust);
+    border-radius: 100px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background: var(--cream-soft);
+    color: var(--plum);
+  }
+
+  .signup-input:focus-visible {
+    outline: 3px solid var(--cobalt);
+    outline-offset: 2px;
+  }
+
+  .signup-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 100px;
+    background: var(--rust);
+    color: var(--cream-soft);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  .signup-button:hover {
+    background: var(--plum);
+  }
+
+  #mce-responses .response {
+    margin-top: 14px;
+    font-size: 0.9rem;
+  }
+  #mce-error-response { color: var(--rust); }
+  #mce-success-response { color: var(--plum); }
+
+     .mc-badge {
+    display: inline-block;
+    margin-top: 16px;
+  }
+
+  .mc-badge img {
+    width: 110px;
+    height: auto;
+    opacity: 0.6;
+    transition: opacity 0.15s ease;
+  }
+
+  .mc-badge:hover img {
+    opacity: 1;
+  }
+     
   /* ---------- Awning stripe signature element ---------- */
   .awning {
     width: 100%;
@@ -177,6 +262,7 @@
     margin: 0 auto 8px;
     display: block;
 }
+     
 
   .eyebrow {
     display: inline-block;
@@ -346,6 +432,36 @@
     </figure>
 
      <!-- Copy the block above to add more photos -->
+
+<section class="signup wrap">
+    <h2>Be the First to Know When We Open</h2>
+    <p class="signup-sub">Get an email the moment our doors open — no spam, just the launch announcement.</p>
+
+    <form action="https://gmail.us6.list-manage.com/subscribe/post?u=3079f563aa5d7f45e4f1c04dc&amp;id=4bfd686a74&amp;f_id=0035d2e0f0"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+          class="signup-form" target="_blank" novalidate>
+
+      <input type="email" name="EMAIL" class="signup-input" id="mce-EMAIL" placeholder="you@email.com" required>
+
+      <!-- Groups these signups in Mailchimp -->
+      <input type="hidden" name="tags" value="1880822">
+
+      <!-- Bot trap — keep exactly as-is, don't remove -->
+      <div aria-hidden="true" style="position: absolute; left: -5000px;">
+        <input type="text" name="b_3079f563aa5d7f45e4f1c04dc_4bfd686a74" tabindex="-1" value="">
+      </div>
+
+      <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="signup-button">Notify Me</button>
+    </form>
+     <a href="http://eepurl.com/tKyHTQggAN" title="Mailchimp - email marketing made easy and fun" class="mc-badge">
+      <img src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp">
+    </a>
+    <div id="mce-responses">
+      <div class="response" id="mce-error-response" style="display:none;"></div>
+      <div class="response" id="mce-success-response" style="display:none;"></div>
+    </div>
+  </section>
+       
    </section>
   <div class="wrap">
     <div class="hours" id="hours"></div>
