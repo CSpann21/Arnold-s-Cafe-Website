@@ -222,11 +222,17 @@
     text-align: center;
   }
 
-.gallery {
+.gallery-signup {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    align-items: center;
     padding: 0 24px 10px;
+  }
+
+.gallery {
+    display: grid;
+    gap: 20px;
   }
 
   .gallery-item {
@@ -412,15 +418,16 @@
        PHOTO ZONE — add your own images here.
        Each <figure> is one photo. Add or remove as many as you like.
        ============================================================ -->
-  <section class="gallery wrap">
-    <figure class="gallery-item">
-      <img src="redpeople.png" alt="A hand-drawn photo of a girl and a boy sitting at a table enjoying coffee">
-    </figure>
+  <div class="gallery-signup wrap">
+    <section class="gallery">
+      <figure class="gallery-item">
+        <img src="redpeople.png" alt="A hand-drawn photo of a girl and a boy sitting at a table enjoying coffee">
+      </figure>
 
-     <!-- Copy the block above to add more photos -->
-  </section>
+       <!-- Copy the block above to add more photos -->
+    </section>
 
-  <section class="signup wrap">
+    <section class="signup">
     <h2>Be the First to Know When We Open</h2>
     <p class="signup-sub">Get an email heads up when we have an opening date!</p>
 
@@ -443,12 +450,12 @@
      <a href="http://eepurl.com/tKyHTQggAN" title="Mailchimp - email marketing made easy and fun" class="mc-badge">
       Powered by Mailchimp
     </a>
-    <div id="mce-responses">
+   <div id="mce-responses">
       <div class="response" id="mce-error-response" style="display:none;"></div>
       <div class="response" id="mce-success-response" style="display:none;"></div>
     </div>
-       
-   </section>
+    </section>
+  </div>
   <div class="wrap">
     <div class="hours" id="hours"></div>
   </div>
